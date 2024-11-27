@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".imgDet">
+
+    <ImageView
+        android:id="@+id/imgShow"
+        android:layout_width="224dp"
+        android:layout_height="224dp"
+        android:layout_margin="20dp"
+        android:background="#29363a"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+
+        <Button
+            android:id="@+id/camImg"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Take a Photo"
+            android:background="@drawable/shape"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/ButtnColor"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/selImg"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape"
+            android:text="@string/pick_from_gallery"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/ButtnColor" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/predictedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="The above terrain is:"
+        android:textSize="20sp" />
+
+</LinearLayout>
